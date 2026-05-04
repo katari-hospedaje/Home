@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apart Hotel Kunturi — Arica, Chile</title>
+
+  <!-- Google Fonts: Playfair Display + Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos principales -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+
+<!-- ░░░░░░░ NAVBAR ░░░░░░░ -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">
+      <div class="logo-pixel">
+        <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0"  y="0"  width="8" height="8" fill="#d69614"/>
+          <rect x="10" y="0"  width="8" height="8" fill="#d69614"/>
+          <rect x="20" y="0"  width="8" height="8" fill="#d69614"/>
+          <rect x="0"  y="10" width="8" height="8" fill="#d69614"/>
+          <rect x="20" y="10" width="8" height="8" fill="#d69614"/>
+          <rect x="0"  y="20" width="8" height="8" fill="#d69614"/>
+          <rect x="10" y="20" width="4" height="8" fill="#d69614"/>
+          <rect x="20" y="20" width="8" height="8" fill="#d69614"/>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <div class="logo-main">Apart Hotel <em>Kunturi</em></div>
+        <div class="logo-sub">Arica, Chile</div>
+      </div>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#habitaciones">Apartamentos</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#ubicacion">Ubicación</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <a href="#contacto" class="btn btn-gold nav-cta">Reservar ahora</a>
+
+    <div class="hamburger" onclick="toggleMenu()" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#nosotros"    onclick="toggleMenu()">Nosotros</a>
+    <a href="#habitaciones" onclick="toggleMenu()">Apartamentos</a>
+    <a href="#servicios"   onclick="toggleMenu()">Servicios</a>
+    <a href="#ubicacion"   onclick="toggleMenu()">Ubicación</a>
+    <a href="#galeria"     onclick="toggleMenu()">Galería</a>
+    <a href="#contacto"    onclick="toggleMenu()">Contacto</a>
+    <a href="#contacto" class="btn btn-gold" onclick="toggleMenu()">Reservar ahora</a>
+  </div>
+</nav>
+
+
+<!-- ░░░░░░░ HERO ░░░░░░░ -->
+<section id="hero">
+
+  <!--
+    IMAGEN HERO:
+    Cuando tengas la foto, agregá el atributo style así:
+    <div class="hero-bg has-image" style="background-image: url('assets/img/hero-bg.jpg')">
+    Si no hay imagen, dejalo como está (usa el degradado).
+  -->
+  <div class="hero-bg"></div>
+  <div class="hero-pixel-grid"></div>
+
+  <!-- Cóndor pixel decorativo -->
+  <div class="hero-pixel-deco">
+    <svg viewBox="0 0 300 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="144" y="0"   width="12" height="12" fill="#d69614"/>
+      <rect x="132" y="12"  width="12" height="12" fill="#d69614"/>
+      <rect x="156" y="12"  width="12" height="12" fill="#d69614"/>
+      <rect x="120" y="24"  width="36" height="12" fill="#d69614"/>
+      <rect x="0"   y="36"  width="12" height="12" fill="#d69614"/>
+      <rect x="108" y="36"  width="84" height="12" fill="#d69614"/>
+      <rect x="276" y="36"  width="12" height="12" fill="#d69614"/>
+      <rect x="0"   y="48"  width="24" height="12" fill="#d69614"/>
+      <rect x="96"  y="48"  width="108" height="12" fill="#d69614"/>
+      <rect x="264" y="48"  width="24" height="12" fill="#d69614"/>
+      <rect x="12"  y="60"  width="24" height="12" fill="#d69614"/>
+      <rect x="96"  y="60"  width="108" height="12" fill="#d69614"/>
+      <rect x="252" y="60"  width="24" height="12" fill="#d69614"/>
+      <rect x="24"  y="72"  width="12" height="12" fill="#d69614"/>
+      <rect x="108" y="72"  width="84" height="12" fill="#d69614"/>
+      <rect x="252" y="72"  width="12" height="12" fill="#d69614"/>
+      <rect x="120" y="84"  width="60" height="12" fill="#d69614"/>
+      <rect x="132" y="96"  width="36" height="12" fill="#d69614"/>
+      <rect x="132" y="108" width="12" height="12" fill="#d69614"/>
+      <rect x="156" y="108" width="12" height="12" fill="#d69614"/>
+      <rect x="132" y="120" width="12" height="24" fill="#d69614"/>
+      <rect x="156" y="120" width="12" height="24" fill="#d69614"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      Arica, Chile <span class="px-dot"></span> Departamentos independientes
+    </div>
+    <h1 class="hero-title">
+      Tu hogar<br/>en el <em>norte</em><br/>del fin del mundo
+    </h1>
+    <p class="hero-subtitle">
+      En Kunturi tenés la libertad de un hogar con la comodidad de un hospedaje.
+      Departamentos íntimos en el corazón de Arica, donde el desierto se abraza al mar.
+    </p>
+    <div class="hero-actions">
+      <a href="#contacto"    class="btn btn-gold">Reservar mi estadía</a>
+      <a href="#habitaciones" class="btn btn-outline">Ver apartamentos</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <div class="scroll-arrow"><span></span><span></span></div>
+    Explorar
+  </div>
+</section>
+
+
+<!-- ░░░░░░░ SOBRE NOSOTROS ░░░░░░░ -->
+<section id="nosotros" class="section">
+  <div class="container">
+    <div class="nosotros-grid">
+
+      <div class="nosotros-img-wrap reveal">
+        <div class="nosotros-img-placeholder">
+          <!--
+            IMAGEN NOSOTROS:
+            Reemplazá el texto de abajo por esta etiqueta cuando tengas la foto:
+            <img src="assets/img/nosotros.jpg" alt="Interior Apart Hotel Kunturi" />
+          -->
+          <span style="position:relative;z-index:1">Foto del hotel</span>
+        </div>
+        <div class="img-badge">
+          <div class="badge-num">★4.9</div>
+          <div class="badge-txt">Calificación<br/>huéspedes</div>
+        </div>
+      </div>
+
+      <div class="nosotros-text reveal reveal-delay-2">
+        <div class="section-label">Sobre nosotros</div>
+        <h2 class="section-title">
+          Un rincón <span>humano</span><br/>en la ciudad del eterno sol
+        </h2>
+        <p>
+          Kunturi nació de una idea simple: que viajar también es descansar de verdad.
+          No hoteles fríos, no habitaciones sin alma. Aquí cada apartamento es un espacio
+          pensado para que te sientas en casa — porque eso es exactamente lo que es.
+        </p>
+        <p>
+          Estamos en Arica, la ciudad más al norte de Chile, donde el Pacífico abraza el
+          desierto y el sol no conoce la melancolía. Un destino que tiene todo: playa,
+          cultura, historia, y el mejor clima del mundo para desconectarse.
+        </p>
+        <p>
+          En Kunturi somos anfitriones, vecinos, y si lo necesitás, tus mejores
+          recomendadores de la ciudad. Porque el buen viaje empieza con el buen alojamiento.
+        </p>
+        <div class="nosotros-pills">
+          <span class="pill">Familias</span>
+          <span class="pill">Parejas</span>
+          <span class="pill">Grupos</span>
+          <span class="pill">Larga estadía</span>
+          <span class="pill">Nómadas digitales</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ░░░░░░░ HABITACIONES ░░░░░░░ -->
+<section id="habitaciones" class="section" style="position:relative;">
+  <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(214,150,20,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(214,150,20,0.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;"></div>
+  <div class="container" style="position:relative;">
+
+    <div class="section-label">Alojamiento</div>
+    <h2 class="section-title" style="color:var(--cream)">Nuestros <span>apartamentos</span></h2>
+    <p>Cada unidad es independiente. Tenés tu cocina, tu espacio, tu ritmo.</p>
+
+    <div class="hab-grid">
+
+      <!-- ── Estudio Kunturi ── -->
+      <div class="hab-card reveal">
+        <div class="hab-img">
+          <div class="hab-tag">Ideal para parejas</div>
+          <!--
+            IMAGEN ESTUDIO:
+            Cuando tengas la foto, reemplazá el ícono por:
+            <img src="assets/img/estudio.jpg" alt="Estudio Kunturi" />
+          -->
+          <div class="hab-img-icon">🛏️</div>
+        </div>
+        <div class="hab-body">
+          <div class="hab-title">Estudio Kunturi</div>
+          <div class="hab-desc">
+            Compacto, inteligente y completamente equipado.
+            Todo lo que necesitás en el espacio perfecto para dos.
+          </div>
+          <div class="hab-features">
+            <span class="hab-feat">1 cama doble</span>
+            <span class="hab-feat">Kitchenette</span>
+            <span class="hab-feat">WiFi</span>
+            <span class="hab-feat">A/C</span>
+          </div>
+          <div class="hab-footer">
+            <div class="hab-price">$55 USD <span>/ noche</span></div>
+            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Departamento Doble ── -->
+      <div class="hab-card reveal reveal-delay-1">
+        <div class="hab-img" style="background:linear-gradient(135deg,#3a2810 0%,#2a1a08 100%)">
+          <div class="hab-tag" style="background:var(--cream);color:var(--carbon);">Más popular</div>
+          <!--
+            IMAGEN DOBLE:
+            <img src="assets/img/doble.jpg" alt="Departamento Doble" />
+          -->
+          <div class="hab-img-icon">🏠</div>
+        </div>
+        <div class="hab-body">
+          <div class="hab-title">Departamento Doble</div>
+          <div class="hab-desc">
+            Sala de estar independiente, dormitorio privado y cocina completa.
+            Tu hogar en Arica por el tiempo que necesites.
+          </div>
+          <div class="hab-features">
+            <span class="hab-feat">1 cama Queen</span>
+            <span class="hab-feat">Sala</span>
+            <span class="hab-feat">Cocina</span>
+            <span class="hab-feat">WiFi</span>
+          </div>
+          <div class="hab-footer">
+            <div class="hab-price">$80 USD <span>/ noche</span></div>
+            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ── Familiar Amplio ── -->
+      <div class="hab-card reveal reveal-delay-2">
+        <div class="hab-img" style="background:linear-gradient(135deg,#2a3020 0%,#1a2010 100%)">
+          <div class="hab-tag">Para familias</div>
+          <!--
+            IMAGEN FAMILIAR:
+            <img src="assets/img/familiar.jpg" alt="Apartamento Familiar" />
+          -->
+          <div class="hab-img-icon">👨‍👩‍👧‍👦</div>
+        </div>
+        <div class="hab-body">
+          <div class="hab-title">Familiar Amplio</div>
+          <div class="hab-desc">
+            Dos dormitorios, espacio para todos y la libertad de manejar
+            tus tiempos como en casa. Ideal para estadías largas.
+          </div>
+          <div class="hab-features">
+            <span class="hab-feat">2 dormitorios</span>
+            <span class="hab-feat">Cocina</span>
+            <span class="hab-feat">Sala</span>
+            <span class="hab-feat">hasta 6 personas</span>
+          </div>
+          <div class="hab-footer">
+            <div class="hab-price">$110 USD <span>/ noche</span></div>
+            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;">Reservar</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /hab-grid -->
+  </div>
+</section>
+
+
+<!-- ░░░░░░░ SERVICIOS ░░░░░░░ -->
+<section id="servicios" class="section">
+  <div class="container">
+    <div class="servicios-header reveal">
+      <div class="section-label">Lo que ofrecemos</div>
+      <h2 class="section-title">Todo lo que<br/><span>necesitás</span></h2>
+    </div>
+    <div class="servicios-grid">
+      <div class="serv-card reveal">
+        <div class="serv-icon">📶</div>
+        <div class="serv-title">WiFi de alta velocidad</div>
+        <div class="serv-desc">Fibra óptica en todos los apartamentos. Ideal para trabajar o hacer streaming sin interrupciones.</div>
+      </div>
+      <div class="serv-card reveal reveal-delay-1">
+        <div class="serv-icon">🍳</div>
+        <div class="serv-title">Cocina equipada</div>
+        <div class="serv-desc">Heladera, microondas, anafe y utensilios completos. Cocinás cuando querés, como querés.</div>
+      </div>
+      <div class="serv-card reveal reveal-delay-2">
+        <div class="serv-icon">❄️</div>
+        <div class="serv-title">Aire acondicionado</div>
+        <div class="serv-desc">Climatización independiente en cada unidad. En Arica el calor es real; acá vas a estar fresco.</div>
+      </div>
+      <div class="serv-card reveal reveal-delay-3">
+        <div class="serv-icon">🅿️</div>
+        <div class="serv-title">Estacionamiento</div>
+        <div class="serv-desc">Lugar privado y seguro para tu vehículo. Sin vueltas ni preocupaciones.</div>
+      </div>
+      <div class="serv-card reveal">
+        <div class="serv-icon">🛋️</div>
+        <div class="serv-title">Áreas comunes</div>
+        <div class="serv-desc">Espacios compartidos para descansar, conocer otros viajeros o simplemente tomar un café.</div>
+      </div>
+      <div class="serv-card reveal reveal-delay-1">
+        <div class="serv-icon">🧺</div>
+        <div class="serv-title">Lavandería</div>
+        <div class="serv-desc">Servicio de lavado disponible. Para estadías largas o cuando necesitás ropa limpia sin salir.</div>
+      </div>
+      <div class="serv-card reveal reveal-delay-2">
+        <div class="serv-icon">🛡️</div>
+        <div class="serv-title">Seguridad 24/7</div>
+        <div class="serv-desc">Acceso controlado, cámaras y atención permanente para que te sientas siempre tranquilo.</div>
+      </div>
+      <div class="serv-card reveal reveal-delay-3">
+        <div class="serv-icon">🗺️</div>
+        <div class="serv-title">Conserjería local</div>
+        <div class="serv-desc">Te recomendamos los mejores lugares de Arica, paseos, restaurantes y todo lo que necesités saber.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ░░░░░░░ UBICACIÓN ░░░░░░░ -->
+<section id="ubicacion" class="section" style="position:relative;">
+  <div class="px-corner tl"></div>
+  <div class="px-corner br"></div>
+  <div class="container">
+    <div class="ubicacion-grid">
+
+      <div class="ubicacion-text reveal">
+        <div class="section-label" style="color:var(--gold)">Dónde estamos</div>
+        <h2 class="section-title" style="color:var(--cream)">
+          En el corazón<br/>de <span>Arica</span>
+        </h2>
+        <p>
+          Arica es la ciudad más septentrional de Chile, conocida por su clima excepcional,
+          sus playas de clase mundial y su rica historia. El sol es una promesa cumplida los 365 días del año.
+        </p>
+        <p>
+          Kunturi está estratégicamente ubicado para que llegués caminando a la playa,
+          al centro histórico y a los mejores restaurantes de la ciudad.
+        </p>
+        <div class="ubicacion-info">
+          <div class="ubic-row">
+            <div class="ubic-icon">📍</div>
+            <div>
+              <div class="ubic-label">Dirección</div>
+              <div class="ubic-val">Av. Comandante San Martín 1234, Arica, Chile</div>
+            </div>
+          </div>
+          <div class="ubic-row">
+            <div class="ubic-icon">📞</div>
+            <div>
+              <div class="ubic-label">Teléfono</div>
+              <div class="ubic-val">+56 9 1234 5678</div>
+            </div>
+          </div>
+          <div class="ubic-row">
+            <div class="ubic-icon">✉️</div>
+            <div>
+              <div class="ubic-label">Email</div>
+              <div class="ubic-val">hola@hotelkunturi.cl</div>
+            </div>
+          </div>
+        </div>
+        <div class="dist-list">
+          <div class="dist-item">🏖️ Playa El Laucho   <span class="dist-km">5 min</span></div>
+          <div class="dist-item">🏛️ Morro de Arica    <span class="dist-km">8 min</span></div>
+          <div class="dist-item">✈️ Aeropuerto        <span class="dist-km">15 min</span></div>
+          <div class="dist-item">🛒 Centro comercial  <span class="dist-km">3 min</span></div>
+          <div class="dist-item">🌊 Playa Chinchorro  <span class="dist-km">10 min</span></div>
+          <div class="dist-item">🚌 Terminal buses    <span class="dist-km">5 min</span></div>
+        </div>
+      </div>
+
+      <div class="reveal reveal-delay-2">
+        <div class="map-placeholder">
+          <!--
+            MAPA: embed de Google Maps con la dirección real del hotel.
+            Para obtener tu embed:
+            1. Buscá la dirección en maps.google.com
+            2. Click en "Compartir" → "Insertar mapa"
+            3. Copiá el iframe y pegalo acá reemplazando el de abajo
+          -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8!2d-70.3297!3d-18.4783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915af3e1b6e0e5b9%3A0x0!2sArica%2C+Chile!5e0!3m2!1ses!2scl!4v1680000000000!5m2!1ses!2scl"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Apart Hotel Kunturi en Arica, Chile">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ░░░░░░░ GALERÍA ░░░░░░░ -->
+<section id="galeria" class="section">
+  <div class="container">
+    <div class="galeria-header reveal">
+      <div>
+        <div class="section-label">Galería</div>
+        <h2 class="section-title">El ambiente<br/><span>Kunturi</span></h2>
+      </div>
+      <a href="#contacto" class="btn btn-dark">Ver más →</a>
+    </div>
+
+    <div class="gal-grid">
+      <!--
+        IMÁGENES GALERÍA:
+        Para cada .gal-bg agregá el estilo con la URL de tu imagen:
+        style="background-image: url('assets/img/gal-01.jpg')"
+        El color de fondo quedará como fallback si la imagen no carga.
+      -->
+      <div class="gal-item reveal">
+        <div class="gal-inner">
+          <div class="gal-bg"></div>
+          <!-- Ejemplo con imagen: <div class="gal-bg" style="background-image: url('assets/img/gal-01.jpg')"></div> -->
+          <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
+        </div>
+        <div class="gal-label">Sala principal</div>
+      </div>
+
+      <div class="gal-item reveal reveal-delay-1">
+        <div class="gal-inner">
+          <div class="gal-bg"></div>
+          <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
+        </div>
+        <div class="gal-label">Dormitorio</div>
+      </div>
+
+      <div class="gal-item reveal reveal-delay-2">
+        <div class="gal-inner">
+          <div class="gal-bg"></div>
+          <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
+        </div>
+        <div class="gal-label">Cocina</div>
+      </div>
+
+      <div class="gal-item reveal reveal-delay-1">
+        <div class="gal-inner">
+          <div class="gal-bg"></div>
+          <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
+        </div>
+        <div class="gal-label">Áreas comunes</div>
+      </div>
+
+      <div class="gal-item reveal reveal-delay-2">
+        <div class="gal-inner">
+          <div class="gal-bg"></div>
+          <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
+        </div>
+        <div class="gal-label">Vista Arica</div>
+      </div>
+
+      <div class="gal-item reveal reveal-delay-3">
+        <div class="gal-inner">
+          <div class="gal-bg"></div>
+          <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
+        </div>
+        <div class="gal-label">Baño</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ░░░░░░░ TESTIMONIOS ░░░░░░░ -->
+<section id="testimonios" class="section">
+  <div class="container">
+    <div class="test-header reveal">
+      <div class="section-label">Experiencias</div>
+      <h2 class="section-title">Lo que dicen<br/>nuestros <span>huéspedes</span></h2>
+    </div>
+    <div class="test-grid">
+
+      <div class="test-card reveal">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">Nos quedamos tres semanas y no queríamos irnos. El departamento tenía todo, y la gente del hotel siempre estuvo ahí cuando lo necesitamos. Volvemos sí o sí.</p>
+        <div class="test-author">
+          <div class="test-avatar">MR</div>
+          <div>
+            <div class="test-name">María & Roberto</div>
+            <div class="test-origin">Santiago de Chile · Familia</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card reveal reveal-delay-1">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">Vine por trabajo, me quedé por la comodidad. Tener cocina propia, buen WiFi y un espacio tranquilo fue todo. Definitivamente el mejor apart de Arica.</p>
+        <div class="test-author">
+          <div class="test-avatar">JT</div>
+          <div>
+            <div class="test-name">Joaquín Torres</div>
+            <div class="test-origin">Buenos Aires, Argentina · Nómade digital</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="test-card reveal reveal-delay-2">
+        <div class="test-quote">"</div>
+        <div class="test-stars">★★★★★</div>
+        <p class="test-text">El ambiente del Kunturi es diferente. No es un hotel frío. Se siente como casa. Y Arica desde ese lugar es una experiencia completamente distinta a lo que esperaba.</p>
+        <div class="test-author">
+          <div class="test-avatar">CP</div>
+          <div>
+            <div class="test-name">Camila & Pablo</div>
+            <div class="test-origin">Lima, Perú · Pareja</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ░░░░░░░ CONTACTO / RESERVAS ░░░░░░░ -->
+<section id="contacto" class="section" style="position:relative;">
+  <div class="px-corner tl"></div>
+  <div class="px-corner tr"></div>
+  <div class="container">
+    <div class="contacto-grid">
+
+      <div class="reveal">
+        <div class="section-label" style="color:var(--gold)">Contacto & Reservas</div>
+        <h2 class="section-title" style="color:var(--cream)">
+          Hablemos y<br/><span>armemos tu estadía</span>
+        </h2>
+        <p class="contacto-intro">
+          ¿Tenés dudas? ¿Querés reservar directamente? Escribinos por
+          cualquiera de estos canales y te respondemos rápido.
+        </p>
+
+        <div class="contact-channels">
+          <a href="https://wa.me/56912345678?text=Hola!%20Quiero%20consultar%20disponibilidad%20en%20Kunturi" target="_blank" class="contact-channel">
+            <div class="ch-icon">💬</div>
+            <div class="ch-info">
+              <div class="ch-label">WhatsApp</div>
+              <div class="ch-val">+56 9 1234 5678 — Respuesta rápida</div>
+            </div>
+          </a>
+          <a href="mailto:hola@hotelkunturi.cl" class="contact-channel">
+            <div class="ch-icon">✉️</div>
+            <div class="ch-info">
+              <div class="ch-label">Email</div>
+              <div class="ch-val">hola@hotelkunturi.cl</div>
+            </div>
+          </a>
+          <div class="contact-channel">
+            <div class="ch-icon">📞</div>
+            <div class="ch-info">
+              <div class="ch-label">Teléfono</div>
+              <div class="ch-val">+56 9 1234 5678</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" class="soc-btn" title="Instagram" aria-label="Instagram">📷</a>
+          <a href="#" class="soc-btn" title="Facebook"  aria-label="Facebook">📘</a>
+          <a href="https://wa.me/56912345678" target="_blank" class="soc-btn" title="WhatsApp" aria-label="WhatsApp">💬</a>
+          <a href="#" class="soc-btn" title="TikTok"    aria-label="TikTok">🎵</a>
+        </div>
+      </div>
+
+      <div class="form-wrap reveal reveal-delay-2">
+        <div class="form-title">Solicitar reserva</div>
+        <form id="bookingForm" onsubmit="handleSubmit(event)">
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" placeholder="Tu nombre" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="checkin">Check-in</label>
+              <input type="date" id="checkin" required />
+            </div>
+            <div class="form-group">
+              <label for="checkout">Check-out</label>
+              <input type="date" id="checkout" required />
+            </div>
+            <div class="form-group">
+              <label for="personas">N° personas</label>
+              <select id="personas">
+                <option value="1">1 persona</option>
+                <option value="2" selected>2 personas</option>
+                <option value="3">3 personas</option>
+                <option value="4">4 personas</option>
+                <option value="5">5+ personas</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="tipo">Tipo de apartamento</label>
+              <select id="tipo">
+                <option value="">Seleccionar...</option>
+                <option value="estudio">Estudio Kunturi</option>
+                <option value="doble">Departamento Doble</option>
+                <option value="familiar">Familiar Amplio</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label for="mensaje">Mensaje (opcional)</label>
+              <textarea id="mensaje" placeholder="¿Alguna consulta, necesidad especial o preferencia?"></textarea>
+            </div>
+          </div>
+          <div class="form-send">
+            <button type="submit" class="btn btn-gold">Enviar solicitud de reserva</button>
+            <p class="form-note">También podés escribirnos por WhatsApp para respuesta inmediata.</p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ░░░░░░░ FOOTER ░░░░░░░ -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <div class="f-logo">Apart Hotel <em>Kunturi</em></div>
+        <div class="section-label" style="margin-top:6px;margin-bottom:0;">
+          <span></span>Arica, Chile
+        </div>
+        <p class="f-tagline">
+          Departamentos independientes en el norte de Chile. Tu hogar con la comodidad
+          de un hospedaje — el lugar perfecto para descubrir Arica a tu propio ritmo.
+        </p>
+        <div class="social-links" style="margin-top:1.2rem;">
+          <a href="#" class="soc-btn" aria-label="Instagram">📷</a>
+          <a href="#" class="soc-btn" aria-label="Facebook">📘</a>
+          <a href="https://wa.me/56912345678" target="_blank" class="soc-btn" aria-label="WhatsApp">💬</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Apartamentos</h4>
+        <ul>
+          <li><a href="#habitaciones">Estudio Kunturi</a></li>
+          <li><a href="#habitaciones">Departamento Doble</a></li>
+          <li><a href="#habitaciones">Familiar Amplio</a></li>
+          <li><a href="#contacto">Reservas</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>El hotel</h4>
+        <ul>
+          <li><a href="#nosotros">Sobre nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:hola@hotelkunturi.cl">hola@hotelkunturi.cl</a></li>
+          <li><a href="tel:+56912345678">+56 9 1234 5678</a></li>
+          <li><a href="#ubicacion">Cómo llegar</a></li>
+          <li><a href="https://wa.me/56912345678" target="_blank">WhatsApp</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Apart Hotel Kunturi — Arica, Chile. Todos los derechos reservados.</p>
+      <div class="footer-px">
+        <span></span><span></span><span></span>
+      </div>
+      <p style="font-size:0.65rem;color:#444;">Diseñado con ♥ en el norte de Chile</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Toast notification -->
+<div class="toast" id="toast">✓ ¡Solicitud enviada! Te contactamos pronto.</div>
+
+<!-- JavaScript principal -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
