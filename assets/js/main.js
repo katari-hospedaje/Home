@@ -71,7 +71,7 @@ const APTS = {
     price:'$55 USD <span>/ noche</span>',
     feats:['2 dormitorios','1 cama Queen','2 camas dobles','Cocina completa','Living / Comedor','1 ba&ntilde;o','Hasta 4 personas'],
     slides:[
-      {img:'assets/img/k1/k1h1.jpg',icon:'&#x1F6CF;',caption:'Dormitorio principal &mdash; cama Queen'},
+      {img: src="assets/img/k1/k1h1.jpg",icon:'&#x1F6CF;',caption:'Dormitorio principal &mdash; cama Queen'},
       {img:'assets/img/k1/k1h2.jpg',icon:'&#x1F6CF;',caption:'Dormitorio secundario &mdash; 2 camas simples'},
       {img:'assets/img/k1/k1living2.jpg',icon:'&#x1F6CB;',caption:'Living / Sala de estar'},
       {img:'assets/img/k1/k1cocina.jpg',icon:'&#x1F373;',caption:'Cocina completamente equipada'},
