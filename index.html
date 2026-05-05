@@ -183,178 +183,163 @@
 </section>
 
 
+
 <!-- ░░░░░░░ HABITACIONES ░░░░░░░ -->
 <section id="habitaciones" class="section" style="position:relative;">
   <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(214,150,20,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(214,150,20,0.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;"></div>
   <div class="container" style="position:relative;">
-
     <div class="section-label">Alojamiento</div>
     <h2 class="section-title" style="color:var(--cream)">Nuestros <span>apartamentos</span></h2>
-    <p>Cada unidad es independiente. Tenés tu cocina, tu espacio, tu ritmo.</p>
-
+    <p style="color:var(--gray);font-size:.9rem;margin:.6rem 0 2.8rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+      Cada unidad es independiente. Tenés tu cocina, tu espacio, tu ritmo.
+      <span style="color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:.1em;">— Tocá una card para ver fotos y detalles →</span>
+    </p>
     <div class="hab-grid">
-
-
-
-      <!-- ── Departamento Katari (Modelo K1) ── -->
-      <div class="hab-card reveal">
+ 
+      <!-- K1 -->
+      <div class="hab-card reveal" onclick="openModal('k1')">
         <div class="hab-img">
           <div class="hab-tag">Más popular</div>
-          <!--
-            IMAGEN ESTUDIO:
-            Cuando tengas la foto, reemplazá el ícono por:
-            <img src="assets/img/estudio.jpg" alt="Estudio Katari" />
-          -->
+          <!-- <img src="assets/img/k1-01.jpg" alt="Departamento K1"> -->
           <div class="hab-img-icon">🛏️</div>
         </div>
         <div class="hab-body">
-          <div class="hab-title">Departamento Katari <br>
-            (Modelo K1)</div>
-          <div class="hab-desc">
-           Acogedor y funcional, ideal para familias o amigos. Con living y comedor, es perfecto para compartir y sentirse como en casa.
-          </div>
+          <div class="hab-title">Departamento Katari<br/>(Modelo K1)</div>
+          <div class="hab-desc">Acogedor y funcional, ideal para familias o amigos. Con living y comedor, perfecto para compartir.</div>
           <div class="hab-features">
-            <span class="hab-feat">2 dormitorios</span>
-            <span class="hab-feat">1 cama Queen</span>
-            <span class="hab-feat">2 camas dobles</span>
-            <span class="hab-feat">Cocina</span>
-            <span class="hab-feat">Living/Comedor</span>
-            <span class="hab-feat">1 baño</span>
-            <span class="hab-feat">4 personas</span>
+            <span class="hab-feat">2 dorm.</span><span class="hab-feat">1 Queen + 2 dobles</span>
+            <span class="hab-feat">Cocina</span><span class="hab-feat">Living/Comedor</span>
+            <span class="hab-feat">1 baño</span><span class="hab-feat">4 personas</span>
           </div>
           <div class="hab-footer">
             <div class="hab-price">$55 USD <span>/ noche</span></div>
-            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;">Reservar</a>
+            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;" onclick="event.stopPropagation()">Reservar</a>
           </div>
         </div>
+        <div class="hab-card-hint">▸ Ver fotos y detalles</div>
       </div>
-      
-<!-- ── Estudio Katari (Modelo K2) ── -->
-      <div class="hab-card reveal">
-        <div class="hab-img">
-          <div class="hab-tag">Más económica</div>
-          <!--
-            IMAGEN ESTUDIO:
-            Cuando tengas la foto, reemplazá el ícono por:
-            <img src="assets/img/estudio.jpg" alt="Estudio Katari" />
-          -->
+ 
+      <!-- K2 -->
+      <div class="hab-card reveal reveal-delay-1" onclick="openModal('k2')">
+        <div class="hab-img" style="background:linear-gradient(135deg,#2a2010 0%,#1a1408 100%)">
+          <div class="hab-tag" style="background:var(--cream);color:var(--carbon);">Más económica</div>
+          <!-- <img src="assets/img/k2-01.jpg" alt="Estudio K2"> -->
           <div class="hab-img-icon">🛏️</div>
         </div>
         <div class="hab-body">
-          <div class="hab-title">Estudio Katari <br> (Modelo K2)</div>
-          <div class="hab-desc">
-          Compacto y económico, pensado para quienes buscan comodidad práctica. Un espacio íntimo y acogedor, sin living.
-          </div>
+          <div class="hab-title">Estudio Katari<br/>(Modelo K2)</div>
+          <div class="hab-desc">Compacto y económico. Misma capacidad que el K1 pero sin living separado — cocina y comedor integrados.</div>
           <div class="hab-features">
-            <span class="hab-feat">2 dormitorios</span>
-            <span class="hab-feat">1 cama Queen</span>
-            <span class="hab-feat">2 camas dobles</span>
-            <span class="hab-feat">Cocina/Comedor</span>
-            <span class="hab-feat">1 baño</span>
-            <span class="hab-feat">4 personas</span>
+            <span class="hab-feat">2 dorm.</span><span class="hab-feat">1 Queen + 2 dobles</span>
+            <span class="hab-feat">Cocina/Comedor</span><span class="hab-feat">1 baño</span><span class="hab-feat">4 personas</span>
           </div>
           <div class="hab-footer">
             <div class="hab-price">$55 USD <span>/ noche</span></div>
-            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;">Reservar</a>
+            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;" onclick="event.stopPropagation()">Reservar</a>
           </div>
         </div>
+        <div class="hab-card-hint">▸ Ver fotos y detalles</div>
       </div>
-      
-      <!-- ── Departamento Accesible  (Modelo K3)── -->
-      <div class="hab-card reveal reveal-delay-1">
+ 
+      <!-- K3 -->
+      <div class="hab-card reveal reveal-delay-2" onclick="openModal('k3')">
         <div class="hab-img" style="background:linear-gradient(135deg,#3a2810 0%,#2a1a08 100%)">
-          <div class="hab-tag" style="background:var(--cream);color:var(--carbon);">Accesible</div>
-          <!--
-            IMAGEN DOBLE:
-            <img src="assets/img/doble.jpg" alt="Departamento Doble" />
-          -->
+          <div class="hab-tag" style="background:#a8d8a8;color:#1a3a1a;">Accesible</div>
+          <!-- <img src="assets/img/k3-01.jpg" alt="Departamento Accesible K3"> -->
           <div class="hab-img-icon">🏠</div>
         </div>
         <div class="hab-body">
-          <div class="hab-title">Departamento Accesible <br> (Modelo K3)</div>
-          <div class="hab-desc">
-           Amplio y accesible, con dos baños y lavandería exclusiva. Ideal para mayor comodidad o personas con movilidad reducida.
-          </div>
+          <div class="hab-title">Departamento Accesible<br/>(Modelo K3)</div>
+          <div class="hab-desc">Amplio y accesible, con dos baños completos y lavandería exclusiva. Diseñado para movilidad reducida.</div>
           <div class="hab-features">
-            <span class="hab-feat">2 dormitorios</span>
-            <span class="hab-feat">1 cama Queen</span>
-            <span class="hab-feat">2 camas dobles</span>
-            <span class="hab-feat">Cocina</span>
-            <span class="hab-feat">Living/Comedor</span>
-            <span class="hab-feat">2 baños</span>
-            <span class="hab-feat">4 personas</span>
-            <span class="hab-feat">Accesible</span>
+            <span class="hab-feat">2 dorm.</span><span class="hab-feat">1 Queen + 2 dobles</span>
+            <span class="hab-feat">Cocina</span><span class="hab-feat">Living/Comedor</span>
+            <span class="hab-feat">2 baños</span><span class="hab-feat">Accesible</span><span class="hab-feat">4 personas</span>
           </div>
           <div class="hab-footer">
             <div class="hab-price">$80 USD <span>/ noche</span></div>
-            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;">Reservar</a>
+            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;" onclick="event.stopPropagation()">Reservar</a>
           </div>
         </div>
+        <div class="hab-card-hint">▸ Ver fotos y detalles</div>
       </div>
-
-      <!-- ── Familiar Amplio (Modelo K5) ── -->
-      <div class="hab-card reveal reveal-delay-2">
-       <div class="hab-img" style="background:linear-gradient(135deg,#2a3020 0%,#1a2010 100%)">
-         <!--  <div class="hab-tag">Para familias</div>-->
-          <!--
-            IMAGEN FAMILIAR:
-            <img src="assets/img/familiar.jpg" alt="Apartamento Familiar" />
-          -->
-          <div class="hab-img-icon">👨‍👩‍👧‍👦</div>
-        </div>
-        <div class="hab-body">
-          <div class="hab-title">Familiar Amplio <br> (Modelo K5)</div>
-          <div class="hab-desc">
-            El más amplio, perfecto para grupos de hasta 5 personas. Espacios comunes grandes para disfrutar sin limitaciones.
-          </div>
-          <div class="hab-features">
-            <span class="hab-feat">2 dormitorios</span>
-            <span class="hab-feat">1 cama Queen</span>
-            <span class="hab-feat">3 camas dobles</span>
-            <span class="hab-feat">Cocina</span>
-            <span class="hab-feat">Living/Comedor</span>
-            <span class="hab-feat">1 baño</span>
-            <span class="hab-feat">5 personas</span>
-          </div>
-          <div class="hab-footer">
-            <div class="hab-price">$110 USD <span>/ noche</span></div>
-            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;">Reservar</a>
-          </div>
-        </div>
-      </div>
- <!-- ── Departamento Separado (Modelo K6) ── -->
-      <div class="hab-card reveal reveal-delay-2">
+ 
+      <!-- K5 -->
+      <div class="hab-card reveal" onclick="openModal('k5')">
         <div class="hab-img" style="background:linear-gradient(135deg,#2a3020 0%,#1a2010 100%)">
-        <!--   <div class="hab-tag">Ideal para amigos</div> -->
-          <!--
-            IMAGEN FAMILIAR:
-            <img src="assets/img/familiar.jpg" alt="Apartamento Familiar" />
-          -->
+          <!-- <img src="assets/img/k5-01.jpg" alt="Familiar K5"> -->
           <div class="hab-img-icon">👨‍👩‍👧‍👦</div>
         </div>
         <div class="hab-body">
-          <div class="hab-title">Departamento Separado <br>
-            (Modelo K6)</div>
-          <div class="hab-desc">
-            Funcional y cómodo, con cuatro camas individuales. Ideal para grupos que prefieren descansar por separado.
-          </div>
+          <div class="hab-title">Familiar Amplio<br/>(Modelo K5)</div>
+          <div class="hab-desc">El más amplio, perfecto para grupos de hasta 5 personas. Tiene la cama extra que marca la diferencia.</div>
           <div class="hab-features">
-            <span class="hab-feat">2 dormitorios</span>
-            <span class="hab-feat">4 camas dobles</span>
-            <span class="hab-feat">Cocina</span>
-            <span class="hab-feat">Living/Comedor</span>
-            <span class="hab-feat">1 baño</span>
-            <span class="hab-feat">4 personas</span>
+            <span class="hab-feat">2 dorm.</span><span class="hab-feat">1 Queen + 3 dobles</span>
+            <span class="hab-feat">Cocina</span><span class="hab-feat">Living/Comedor</span>
+            <span class="hab-feat">1 baño</span><span class="hab-feat">5 personas</span>
           </div>
           <div class="hab-footer">
             <div class="hab-price">$110 USD <span>/ noche</span></div>
-            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;">Reservar</a>
+            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;" onclick="event.stopPropagation()">Reservar</a>
           </div>
         </div>
+        <div class="hab-card-hint">▸ Ver fotos y detalles</div>
       </div>
+ 
+      <!-- K6 -->
+      <div class="hab-card reveal reveal-delay-1" onclick="openModal('k6')">
+        <div class="hab-img" style="background:linear-gradient(135deg,#20283a 0%,#101820 100%)">
+          <!-- <img src="assets/img/k6-01.jpg" alt="Departamento Separado K6"> -->
+          <div class="hab-img-icon">👨‍👩‍👧‍👦</div>
+        </div>
+        <div class="hab-body">
+          <div class="hab-title">Departamento Separado<br/>(Modelo K6)</div>
+          <div class="hab-desc">Cuatro camas individuales en dos dormitorios. Ideal para grupos donde cada uno prefiere su propia cama.</div>
+          <div class="hab-features">
+            <span class="hab-feat">2 dorm.</span><span class="hab-feat">4 camas dobles</span>
+            <span class="hab-feat">Cocina</span><span class="hab-feat">Living/Comedor</span>
+            <span class="hab-feat">1 baño</span><span class="hab-feat">4 personas</span>
+          </div>
+          <div class="hab-footer">
+            <div class="hab-price">$110 USD <span>/ noche</span></div>
+            <a href="#contacto" class="btn btn-gold" style="padding:9px 18px;font-size:0.65rem;" onclick="event.stopPropagation()">Reservar</a>
+          </div>
+        </div>
+        <div class="hab-card-hint">▸ Ver fotos y detalles</div>
+      </div>
+ 
     </div><!-- /hab-grid -->
   </div>
 </section>
+ 
+ 
+<!-- ░░░░░░░ MODAL CARRUSEL ░░░░░░░ -->
+<div class="apt-modal-overlay" id="aptModal" onclick="closeModalOutside(event)">
+  <div class="apt-modal" id="aptModalInner">
+    <button class="modal-close" onclick="closeModal()" aria-label="Cerrar">&#x2715;</button>
+    <div class="modal-carousel">
+      <div class="carousel-track" id="carouselTrack"></div>
+      <button class="carousel-btn prev" onclick="carouselMove(-1)" aria-label="Anterior">&#8249;</button>
+      <button class="carousel-btn next" onclick="carouselMove(1)"  aria-label="Siguiente">&#8250;</button>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+    <div class="modal-info">
+      <div class="modal-tag"   id="mTag"></div>
+      <div class="modal-title" id="mTitle"></div>
+      <div class="modal-model" id="mModel"></div>
+      <div class="modal-desc"  id="mDesc"></div>
+      <div class="modal-why">
+        <div class="modal-why-title">&#191;Por qu&#233; elegir este modelo?</div>
+        <div class="modal-why-text" id="mWhy"></div>
+      </div>
+      <div class="modal-feats" id="mFeats"></div>
+      <div class="modal-footer">
+        <div class="modal-price" id="mPrice"></div>
+        <a href="#contacto" class="btn btn-gold" onclick="closeModal()">Reservar este modelo</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 <!-- ░░░░░░░ SERVICIOS ░░░░░░░ -->
