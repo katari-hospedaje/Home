@@ -4,13 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Apart Hotel Katari — Arica, Chile</title>
-
-  <!-- Google Fonts: Playfair Display + Montserrat -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Estilos principales -->
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
@@ -36,7 +32,6 @@
         <div class="logo-sub">Arica, Chile</div>
       </div>
     </a>
-
     <ul class="nav-links">
       <li><a href="#nosotros">Nosotros</a></li>
       <li><a href="#habitaciones">Apartamentos</a></li>
@@ -45,21 +40,18 @@
       <li><a href="#galeria">Galería</a></li>
       <li><a href="#contacto">Contacto</a></li>
     </ul>
-
     <a href="#contacto" class="btn btn-gold nav-cta">Reservar ahora</a>
-
     <div class="hamburger" onclick="toggleMenu()" aria-label="Menú">
       <span></span><span></span><span></span>
     </div>
   </div>
-
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#nosotros"    onclick="toggleMenu()">Nosotros</a>
+    <a href="#nosotros"     onclick="toggleMenu()">Nosotros</a>
     <a href="#habitaciones" onclick="toggleMenu()">Apartamentos</a>
-    <a href="#servicios"   onclick="toggleMenu()">Servicios</a>
-    <a href="#ubicacion"   onclick="toggleMenu()">Ubicación</a>
-    <a href="#galeria"     onclick="toggleMenu()">Galería</a>
-    <a href="#contacto"    onclick="toggleMenu()">Contacto</a>
+    <a href="#servicios"    onclick="toggleMenu()">Servicios</a>
+    <a href="#ubicacion"    onclick="toggleMenu()">Ubicación</a>
+    <a href="#galeria"      onclick="toggleMenu()">Galería</a>
+    <a href="#contacto"     onclick="toggleMenu()">Contacto</a>
     <a href="#contacto" class="btn btn-gold" onclick="toggleMenu()">Reservar ahora</a>
   </div>
 </nav>
@@ -67,17 +59,17 @@
 
 <!-- ░░░░░░░ HERO ░░░░░░░ -->
 <section id="hero">
-
   <!--
     IMAGEN HERO:
-    Cuando tengas la foto, agregá el atributo style así:
-    <div class="hero-bg has-image" style="background-image: url('assets/img/hero-bg.jpg')">
-    Si no hay imagen, dejalo como está (usa el degradado).
+    Cuando tengas la foto de fondo, cambiá esta línea:
+      <div class="hero-bg"></div>
+    por:
+      <div class="hero-bg has-image" style="background-image: url('assets/img/gen/hero-bg.jpg')"></div>
   -->
   <div class="hero-bg"></div>
   <div class="hero-pixel-grid"></div>
 
-  <!-- Cóndor pixel decorativo -->
+  <!-- Cóndor pixel art decorativo -->
   <div class="hero-pixel-deco">
     <svg viewBox="0 0 300 260" fill="none" xmlns="http://www.w3.org/2000/svg">
       <rect x="144" y="0"   width="12" height="12" fill="#d69614"/>
@@ -110,14 +102,14 @@
       Arica, Chile <span class="px-dot"></span> Departamentos independientes
     </div>
     <h1 class="hero-title">
-      Tu hogar<br/>en el <em>norte
+      Tu hogar<br/>en el <em>norte</em><br/>del fin del mundo
     </h1>
     <p class="hero-subtitle">
       En Katari tenés la libertad de un hogar con la comodidad de un hospedaje.
       Departamentos íntimos en el corazón de Arica, donde el desierto se abraza al mar.
     </p>
     <div class="hero-actions">
-      <a href="#contacto"    class="btn btn-gold">Reservar mi estadía</a>
+      <a href="#contacto"     class="btn btn-gold">Reservar mi estadía</a>
       <a href="#habitaciones" class="btn btn-outline">Ver apartamentos</a>
     </div>
   </div>
@@ -137,12 +129,11 @@
       <div class="nosotros-img-wrap reveal">
         <div class="nosotros-img-placeholder">
           <!--
-            IMAGEN NOSOTROS:
-            Reemplazá el texto de abajo por esta etiqueta cuando tengas la foto:
-            <img src="assets/img/nosotros.png" alt="Interior Apart Hotel Kunturi" />
+            IMAGEN "SOBRE NOSOTROS":
+            Poné tu foto aquí. Ruta: assets/img/gen/nosotros.jpg
+            La imagen se recorta automáticamente para llenar el espacio.
           -->
-          <img src="assets/img/nosotros.png" alt="Interior Apart Hotel Kunturi"/>
-          <span style="position:relative;z-index:1"></span>
+          <img src="assets/img/gen/nosotros.jpg" alt="Interior Apart Hotel Katari" />
         </div>
         <div class="img-badge">
           <div class="badge-num">★4.9</div>
@@ -183,33 +174,41 @@
 </section>
 
 
-
 <!-- ░░░░░░░ HABITACIONES ░░░░░░░ -->
 <section id="habitaciones" class="section" style="position:relative;">
   <div style="position:absolute;inset:0;background-image:linear-gradient(rgba(214,150,20,0.03) 1px,transparent 1px),linear-gradient(90deg,rgba(214,150,20,0.03) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;"></div>
   <div class="container" style="position:relative;">
+
     <div class="section-label">Alojamiento</div>
     <h2 class="section-title" style="color:var(--cream)">Nuestros <span>apartamentos</span></h2>
     <p style="color:var(--gray);font-size:.9rem;margin:.6rem 0 2.8rem;display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
       Cada unidad es independiente. Tenés tu cocina, tu espacio, tu ritmo.
       <span style="color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:.1em;">— Tocá una card para ver fotos y detalles →</span>
     </p>
+
     <div class="hab-grid">
- 
-      <!-- K1 -->
+
+      <!-- ── K1 ── -->
       <div class="hab-card reveal" onclick="openModal('k1')">
         <div class="hab-img">
           <div class="hab-tag">Más popular</div>
-           <img src="assets/img/k1/k1living.jpg" alt="Departamento K1"> 
-           <div class="hab-img-icon">🛏️</div>
+          <!--
+            FOTO CARD K1: assets/img/k1/k1living.jpg
+            Si la imagen no carga, se muestra el ícono de fondo.
+          -->
+          <img src="assets/img/k1/k1living.jpg" alt="Departamento K1" />
+          <div class="hab-img-icon">🛏️</div>
         </div>
         <div class="hab-body">
           <div class="hab-title">Departamento Katari<br/>(Modelo K1)</div>
           <div class="hab-desc">Acogedor y funcional, ideal para familias o amigos. Con living y comedor, perfecto para compartir.</div>
           <div class="hab-features">
-            <span class="hab-feat">2 dorm.</span><span class="hab-feat">1 Queen + 2 dobles</span>
-            <span class="hab-feat">Cocina</span><span class="hab-feat">Living/Comedor</span>
-            <span class="hab-feat">1 baño</span><span class="hab-feat">4 personas</span>
+            <span class="hab-feat">2 dorm.</span>
+            <span class="hab-feat">1 Queen + 2 dobles</span>
+            <span class="hab-feat">Cocina</span>
+            <span class="hab-feat">Living/Comedor</span>
+            <span class="hab-feat">1 baño</span>
+            <span class="hab-feat">4 personas</span>
           </div>
           <div class="hab-footer">
             <div class="hab-price">$55 USD <span>/ noche</span></div>
@@ -218,20 +217,26 @@
         </div>
         <div class="hab-card-hint">▸ Ver fotos y detalles</div>
       </div>
- 
-      <!-- K2 -->
+
+      <!-- ── K2 ── -->
       <div class="hab-card reveal reveal-delay-1" onclick="openModal('k2')">
         <div class="hab-img" style="background:linear-gradient(135deg,#2a2010 0%,#1a1408 100%)">
           <div class="hab-tag" style="background:var(--cream);color:var(--carbon);">Más económica</div>
-          <img src="assets/img/k2/k2h2.jpg" alt="Estudio K2">
+          <!--
+            FOTO CARD K2: assets/img/k2/k2h2.jpg
+          -->
+          <img src="assets/img/k2/k2h2.jpg" alt="Estudio K2" />
           <div class="hab-img-icon">🛏️</div>
         </div>
         <div class="hab-body">
           <div class="hab-title">Estudio Katari<br/>(Modelo K2)</div>
           <div class="hab-desc">Compacto y económico. Misma capacidad que el K1 pero sin living separado — cocina y comedor integrados.</div>
           <div class="hab-features">
-            <span class="hab-feat">2 dorm.</span><span class="hab-feat">1 Queen + 2 dobles</span>
-            <span class="hab-feat">Cocina/Comedor</span><span class="hab-feat">1 baño</span><span class="hab-feat">4 personas</span>
+            <span class="hab-feat">2 dorm.</span>
+            <span class="hab-feat">1 Queen + 2 dobles</span>
+            <span class="hab-feat">Cocina/Comedor</span>
+            <span class="hab-feat">1 baño</span>
+            <span class="hab-feat">4 personas</span>
           </div>
           <div class="hab-footer">
             <div class="hab-price">$55 USD <span>/ noche</span></div>
@@ -240,21 +245,28 @@
         </div>
         <div class="hab-card-hint">▸ Ver fotos y detalles</div>
       </div>
- 
-      <!-- K3 -->
+
+      <!-- ── K3 ── -->
       <div class="hab-card reveal reveal-delay-2" onclick="openModal('k3')">
         <div class="hab-img" style="background:linear-gradient(135deg,#3a2810 0%,#2a1a08 100%)">
           <div class="hab-tag" style="background:#a8d8a8;color:#1a3a1a;">Accesible</div>
-          <img src="assets/img/k3/k3comedor2.jpg" alt="Departamento Accesible K3">
-          <div class="hab-img-icon">👨‍👩‍👧‍👦</div>
+          <!--
+            FOTO CARD K3: assets/img/k3/k3comedor2.jpg
+          -->
+          <img src="assets/img/k3/k3comedor2.jpg" alt="Departamento Accesible K3" />
+          <div class="hab-img-icon">🏠</div>
         </div>
         <div class="hab-body">
           <div class="hab-title">Departamento Accesible<br/>(Modelo K3)</div>
           <div class="hab-desc">Amplio y accesible, con dos baños completos y lavandería exclusiva. Diseñado para movilidad reducida.</div>
           <div class="hab-features">
-            <span class="hab-feat">2 dorm.</span><span class="hab-feat">1 Queen + 2 dobles</span>
-            <span class="hab-feat">Cocina</span><span class="hab-feat">Living/Comedor</span>
-            <span class="hab-feat">2 baños</span><span class="hab-feat">Accesible</span><span class="hab-feat">4 personas</span>
+            <span class="hab-feat">2 dorm.</span>
+            <span class="hab-feat">1 Queen + 2 dobles</span>
+            <span class="hab-feat">Cocina</span>
+            <span class="hab-feat">Living/Comedor</span>
+            <span class="hab-feat">2 baños</span>
+            <span class="hab-feat">Accesible</span>
+            <span class="hab-feat">4 personas</span>
           </div>
           <div class="hab-footer">
             <div class="hab-price">$80 USD <span>/ noche</span></div>
@@ -263,20 +275,26 @@
         </div>
         <div class="hab-card-hint">▸ Ver fotos y detalles</div>
       </div>
- 
-      <!-- K5 -->
+
+      <!-- ── K5 ── -->
       <div class="hab-card reveal" onclick="openModal('k5')">
         <div class="hab-img" style="background:linear-gradient(135deg,#2a3020 0%,#1a2010 100%)">
-          <img src="assets/img/k5/k5comedor.jpg" alt="Familiar K5">
-         <div class="hab-img-icon">🏠</div>
+          <!--
+            FOTO CARD K5: assets/img/k5/k5comedor.jpg
+          -->
+          <img src="assets/img/k5/k5comedor.jpg" alt="Familiar Amplio K5" />
+          <div class="hab-img-icon">👨‍👩‍👧‍👦</div>
         </div>
         <div class="hab-body">
           <div class="hab-title">Familiar Amplio<br/>(Modelo K5)</div>
           <div class="hab-desc">El más amplio, perfecto para grupos de hasta 5 personas. Tiene la cama extra que marca la diferencia.</div>
           <div class="hab-features">
-            <span class="hab-feat">2 dorm.</span><span class="hab-feat">1 Queen + 3 dobles</span>
-            <span class="hab-feat">Cocina</span><span class="hab-feat">Living/Comedor</span>
-            <span class="hab-feat">1 baño</span><span class="hab-feat">5 personas</span>
+            <span class="hab-feat">2 dorm.</span>
+            <span class="hab-feat">1 Queen + 3 dobles</span>
+            <span class="hab-feat">Cocina</span>
+            <span class="hab-feat">Living/Comedor</span>
+            <span class="hab-feat">1 baño</span>
+            <span class="hab-feat">5 personas</span>
           </div>
           <div class="hab-footer">
             <div class="hab-price">$110 USD <span>/ noche</span></div>
@@ -285,20 +303,26 @@
         </div>
         <div class="hab-card-hint">▸ Ver fotos y detalles</div>
       </div>
- 
-      <!-- K6 -->
+
+      <!-- ── K6 ── -->
       <div class="hab-card reveal reveal-delay-1" onclick="openModal('k6')">
         <div class="hab-img" style="background:linear-gradient(135deg,#20283a 0%,#101820 100%)">
-          <img src="assets/img/k6/k6comedor.jpg" alt="Departamento Separado K6">
-         <div class="hab-img-icon">👨‍👩‍👧‍👦</div>
+          <!--
+            FOTO CARD K6: assets/img/k6/k6comedor.jpg
+          -->
+          <img src="assets/img/k6/k6comedor.jpg" alt="Departamento Separado K6" />
+          <div class="hab-img-icon">👨‍👩‍👧‍👦</div>
         </div>
         <div class="hab-body">
           <div class="hab-title">Departamento Separado<br/>(Modelo K6)</div>
           <div class="hab-desc">Cuatro camas individuales en dos dormitorios. Ideal para grupos donde cada uno prefiere su propia cama.</div>
           <div class="hab-features">
-            <span class="hab-feat">2 dorm.</span><span class="hab-feat">4 camas dobles</span>
-            <span class="hab-feat">Cocina</span><span class="hab-feat">Living/Comedor</span>
-            <span class="hab-feat">1 baño</span><span class="hab-feat">4 personas</span>
+            <span class="hab-feat">2 dorm.</span>
+            <span class="hab-feat">4 camas dobles</span>
+            <span class="hab-feat">Cocina</span>
+            <span class="hab-feat">Living/Comedor</span>
+            <span class="hab-feat">1 baño</span>
+            <span class="hab-feat">4 personas</span>
           </div>
           <div class="hab-footer">
             <div class="hab-price">$110 USD <span>/ noche</span></div>
@@ -307,12 +331,12 @@
         </div>
         <div class="hab-card-hint">▸ Ver fotos y detalles</div>
       </div>
- 
+
     </div><!-- /hab-grid -->
   </div>
 </section>
- 
- 
+
+
 <!-- ░░░░░░░ MODAL CARRUSEL ░░░░░░░ -->
 <div class="apt-modal-overlay" id="aptModal" onclick="closeModalOutside(event)">
   <div class="apt-modal" id="aptModalInner">
@@ -329,7 +353,7 @@
       <div class="modal-model" id="mModel"></div>
       <div class="modal-desc"  id="mDesc"></div>
       <div class="modal-why">
-        <div class="modal-why-title">&#191;Por qu&#233; elegir este modelo?</div>
+        <div class="modal-why-title">&#191;Por qué elegir este modelo?</div>
         <div class="modal-why-text" id="mWhy"></div>
       </div>
       <div class="modal-feats" id="mFeats"></div>
@@ -378,7 +402,7 @@
       <div class="serv-card reveal reveal-delay-1">
         <div class="serv-icon">🧺</div>
         <div class="serv-title">Lavandería</div>
-        <div class="serv-desc">Servicio de lavado disponible bajo solicitud. Para estadías largas o cuando necesitás ropa limpia sin salir.</div>
+        <div class="serv-desc">Servicio de lavado disponible bajo solicitud. Para estadías largas o cuando necesitás ropa limpia.</div>
       </div>
       <div class="serv-card reveal reveal-delay-2">
         <div class="serv-icon">🛡️</div>
@@ -404,30 +428,25 @@
 
       <div class="ubicacion-text reveal">
         <div class="section-label" style="color:var(--gold)">Dónde estamos</div>
-        <h2 class="section-title" style="color:var(--cream)">
-          En el corazón<br/>de <span>Arica</span>
-        </h2>
-        <p>
-          Arica es la ciudad más al norte de Chile, conocida por su clima excepcional,
-          sus playas de clase mundial y su rica historia. El sol es una promesa cumplida los 365 días del año.
-        </p>
-        <p>
-          Katari está estratégicamente ubicado para que llegués caminando a la playa,
-          al centro histórico y a los mejores restaurantes de la ciudad.
-        </p>
+        <h2 class="section-title" style="color:var(--cream)">En el corazón<br/>de <span>Arica</span></h2>
+        <p>Arica es la ciudad más al norte de Chile, conocida por su clima excepcional,
+        sus playas de clase mundial y su rica historia. El sol es una promesa cumplida los 365 días del año.</p>
+        <p>Katari está estratégicamente ubicado para que llegués caminando a la playa,
+        al centro histórico y a los mejores restaurantes de la ciudad.</p>
+
         <div class="ubicacion-info">
           <div class="ubic-row">
             <div class="ubic-icon">📍</div>
             <div>
               <div class="ubic-label">Dirección</div>
-              <div class="ubic-val">Av. Santa  María 2395, Arica, Chile</div>
+              <div class="ubic-val">Av. Santa María 2395, Arica, Chile</div>
             </div>
           </div>
           <div class="ubic-row">
             <div class="ubic-icon">📞</div>
             <div>
               <div class="ubic-label">Teléfono</div>
-              <div class="ubic-val">+56 9 93869645</div>
+              <div class="ubic-val">+56 9 9386 9645</div>
             </div>
           </div>
           <div class="ubic-row">
@@ -438,40 +457,33 @@
             </div>
           </div>
         </div>
+
+        <!--
+          DISTANCIAS: grid de 3 columnas → llena el ancho sin espacios vacíos.
+          Cada .dist-item tiene el lugar arriba y el tiempo abajo.
+        -->
         <div class="dist-list">
-          <div class="dist-item">🏖️ Playa Chinchorro <span class="dist-km">5–10 min caminando</span></div>
-          <div class="dist-item">🛒 Agro Santa María <span class="dist-km">2–3 min caminando</span></div>
-          <div class="dist-item">🛒 Supermercado  <span class="dist-km">1–2 min caminando</span></div>
-          <div class="dist-item">🛍️ Mall Plaza Arica <span class="dist-km">10–12 min en auto</span></div>
-          <div class="dist-item">🎰 Casino Arica <span class="dist-km">10–12 min en auto</span></div>
-          <div class="dist-item">🍸 Boulevard del Casino <span class="dist-km">10–12 min en auto</span></div>
-          <div class="dist-item">🏙️ Centro de Arica <span class="dist-km">10–12 min en auto</span></div>
-          <div class="dist-item">⛪ Catedral San Marcos <span class="dist-km">10–12 min en auto</span></div>
-          <div class="dist-item">⛰️ Morro de Arica <span class="dist-km">10–15 min en auto</span></div>
-          <div class="dist-item">🌅 Ex Isla Alacrán <span class="dist-km">12–15 min en auto</span></div>
-
-
-          <div class="dist-item">🚌 Terminal de Buses Arica <span class="dist-km">8–10 min en auto</span></div>
-          <div class="dist-item">✈️ Aeropuerto        <span class="dist-km">15 min</span></div>
-          
+          <div class="dist-item"><span class="dist-place">🏖️ Playa Chinchorro</span>      <span class="dist-km">5–10 min caminando</span></div>
+          <div class="dist-item"><span class="dist-place">🛒 Agro Santa María</span>        <span class="dist-km">2–3 min caminando</span></div>
+          <div class="dist-item"><span class="dist-place">🛒 Supermercado</span>            <span class="dist-km">1–2 min caminando</span></div>
+          <div class="dist-item"><span class="dist-place">🛍️ Mall Plaza Arica</span>       <span class="dist-km">10–12 min en auto</span></div>
+          <div class="dist-item"><span class="dist-place">🎰 Casino Arica</span>            <span class="dist-km">10–12 min en auto</span></div>
+          <div class="dist-item"><span class="dist-place">🍸 Boulevard del Casino</span>    <span class="dist-km">10–12 min en auto</span></div>
+          <div class="dist-item"><span class="dist-place">🏙️ Centro de Arica</span>        <span class="dist-km">10–12 min en auto</span></div>
+          <div class="dist-item"><span class="dist-place">⛪ Catedral San Marcos</span>     <span class="dist-km">10–12 min en auto</span></div>
+          <div class="dist-item"><span class="dist-place">⛰️ Morro de Arica</span>         <span class="dist-km">10–15 min en auto</span></div>
+          <div class="dist-item"><span class="dist-place">🌅 Ex Isla Alacrán</span>         <span class="dist-km">12–15 min en auto</span></div>
+          <div class="dist-item"><span class="dist-place">🚌 Terminal de Buses</span>       <span class="dist-km">8–10 min en auto</span></div>
+          <div class="dist-item"><span class="dist-place">✈️ Aeropuerto</span>             <span class="dist-km">15 min en auto</span></div>
         </div>
       </div>
 
       <div class="reveal reveal-delay-2">
         <div class="map-placeholder">
-          <!--
-            MAPA: embed de Google Maps con la dirección real del hotel.
-            Para obtener tu embed:
-            1. Buscá la dirección en maps.google.com
-            2. Click en "Compartir" → "Insertar mapa"
-            3. Copiá el iframe y pegalo acá reemplazando el de abajo
-          -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.3908572301916!2d-70.30359002519647!3d-18.465946594392783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915aa9a57668f96d%3A0xd9ecd9c2dd5593bf!2sAv.%20Sta.%20Mar%C3%ADa%202395%2C%201020070%20Arica%2C%20Arica%20y%20Parinacota%2C%20Chile!5e0!3m2!1ses-419!2snl!4v1777928150742!5m2!1ses-419!2snl"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            title="Ubicación Apart Hotel Kunturi en Arica, Chile">
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Ubicación Apart Hotel Katari — Arica, Chile">
           </iframe>
         </div>
       </div>
@@ -495,14 +507,13 @@
     <div class="gal-grid">
       <!--
         IMÁGENES GALERÍA:
-        Para cada .gal-bg agregá el estilo con la URL de tu imagen:
-        style="background-image: url('assets/img/gal-01.jpg')"
-        El color de fondo quedará como fallback si la imagen no carga.
+        Reemplazá el style="background-image: url(...)" de cada .gal-bg
+        con la ruta de tu foto. Todas van en: assets/img/gen/
+        Formato recomendado: JPG, mínimo 800px de ancho.
       -->
       <div class="gal-item reveal">
         <div class="gal-inner">
-          <div class="gal-bg"></div>
-           <div class="gal-bg" style="background-image: url('assets/img/gen/quincho1.jpg')"></div> 
+          <div class="gal-bg" style="background-image: url('assets/img/gen/quincho1.jpg')"></div>
           <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
         </div>
         <div class="gal-label">Quincho</div>
@@ -510,8 +521,7 @@
 
       <div class="gal-item reveal reveal-delay-1">
         <div class="gal-inner">
-          <div class="gal-bg"></div>
-           <div class="gal-bg" style="background-image: url('assets/img/gen/parrilla.jpg')"></div>
+          <div class="gal-bg" style="background-image: url('assets/img/gen/parrilla.jpg')"></div>
           <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
         </div>
         <div class="gal-label">Parrilla</div>
@@ -519,7 +529,6 @@
 
       <div class="gal-item reveal reveal-delay-2">
         <div class="gal-inner">
-          <div class="gal-bg"></div>
           <div class="gal-bg" style="background-image: url('assets/img/gen/terraza.jpg')"></div>
           <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
         </div>
@@ -528,14 +537,19 @@
 
       <div class="gal-item reveal reveal-delay-1">
         <div class="gal-inner">
+          <!--
+            Foto de lavandería: assets/img/gen/lavanderia.jpg
+            Mientras no tengas la foto, el fondo color aparece solo.
+          -->
           <div class="gal-bg"></div>
           <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
         </div>
-        <div class="gal-label">Lavanderia</div>
+        <div class="gal-label">Lavandería</div>
       </div>
 
       <div class="gal-item reveal reveal-delay-2">
         <div class="gal-inner">
+          <!-- assets/img/gen/vista-arica.jpg -->
           <div class="gal-bg"></div>
           <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
         </div>
@@ -544,13 +558,13 @@
 
       <div class="gal-item reveal reveal-delay-3">
         <div class="gal-inner">
+          <!-- assets/img/gen/banio.jpg -->
           <div class="gal-bg"></div>
           <div class="gal-overlay"><span class="gal-overlay-icon">⊕</span></div>
         </div>
         <div class="gal-label">Baño</div>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -563,11 +577,10 @@
       <h2 class="section-title">Lo que dicen<br/>nuestros <span>huéspedes</span></h2>
     </div>
     <div class="test-grid">
-
       <div class="test-card reveal">
         <div class="test-quote">"</div>
         <div class="test-stars">★★★★★</div>
-        <p class="test-text">Nos quedamos tres semanas y no queríamos irnos. El departamento tenía todo, y la gente del hotel siempre estuvo ahí cuando lo necesitamos. Volvemos sí o sí.</p>
+        <p class="test-text">Nos quedamos tres semanas y no queríamos irnos. El departamento tenía todo, y la gente siempre estuvo ahí cuando lo necesitamos. Volvemos sí o sí.</p>
         <div class="test-author">
           <div class="test-avatar">MR</div>
           <div>
@@ -576,7 +589,6 @@
           </div>
         </div>
       </div>
-
       <div class="test-card reveal reveal-delay-1">
         <div class="test-quote">"</div>
         <div class="test-stars">★★★★★</div>
@@ -589,11 +601,10 @@
           </div>
         </div>
       </div>
-
       <div class="test-card reveal reveal-delay-2">
         <div class="test-quote">"</div>
         <div class="test-stars">★★★★★</div>
-        <p class="test-text">El ambiente del Kunturi es diferente. No es un hotel frío. Se siente como casa. Y Arica desde ese lugar es una experiencia completamente distinta a lo que esperaba.</p>
+        <p class="test-text">El ambiente de Katari es diferente. No es un hotel frío. Se siente como casa. Y Arica desde ese lugar es una experiencia completamente distinta a lo que esperaba.</p>
         <div class="test-author">
           <div class="test-avatar">CP</div>
           <div>
@@ -602,7 +613,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -617,16 +627,9 @@
 
       <div class="reveal">
         <div class="section-label" style="color:var(--gold)">Contacto & Reservas</div>
-        <h2 class="section-title" style="color:var(--cream)">
-          Hablemos y<br/><span>armemos tu estadía</span>
-        </h2>
-        <p class="contacto-intro">
-          ¿Tenés dudas? ¿Querés reservar directamente? Escribinos por
-          cualquiera de estos canales y te respondemos rápido.
-        </p>
-
+        <h2 class="section-title" style="color:var(--cream)">Hablemos y<br/><span>armemos tu estadía</span></h2>
+        <p class="contacto-intro">¿Tenés dudas? ¿Querés reservar directamente? Escribinos por cualquiera de estos canales y te respondemos rápido.</p>
         <div class="contact-channels">
-          
           <a href="https://wa.me/56993869645?text=Hola,%20quer%C3%ADa%20saber%20la%20disponibilidad%20de%20Katari" target="_blank" class="contact-channel">
             <div class="ch-icon">💬</div>
             <div class="ch-info">
@@ -634,11 +637,11 @@
               <div class="ch-val">+56 9 9386 9645 — Respuesta rápida</div>
             </div>
           </a>
-          <a href="mailto:Katari.hostel@gmail.com" class="contact-channel">
+          <a href="mailto:katari.hospedaje@gmail.com" class="contact-channel">
             <div class="ch-icon">✉️</div>
             <div class="ch-info">
               <div class="ch-label">Email</div>
-              <div class="ch-val">Katari.hostel@gmail.com</div>
+              <div class="ch-val">katari.hospedaje@gmail.com</div>
             </div>
           </a>
           <div class="contact-channel">
@@ -649,7 +652,6 @@
             </div>
           </div>
         </div>
-
         <div class="social-links">
           <a href="#" class="soc-btn" title="Instagram" aria-label="Instagram">📷</a>
           <a href="#" class="soc-btn" title="Facebook"  aria-label="Facebook">📘</a>
@@ -692,9 +694,11 @@
               <label for="tipo">Tipo de apartamento</label>
               <select id="tipo">
                 <option value="">Seleccionar...</option>
-                <option value="estudio">Estudio Kunturi</option>
-                <option value="doble">Departamento Doble</option>
-                <option value="familiar">Familiar Amplio</option>
+                <option value="k1">Departamento Katari (K1)</option>
+                <option value="k2">Estudio Katari (K2)</option>
+                <option value="k3">Departamento Accesible (K3)</option>
+                <option value="k5">Familiar Amplio (K5)</option>
+                <option value="k6">Departamento Separado (K6)</option>
               </select>
             </div>
             <div class="form-group full">
@@ -718,33 +722,26 @@
 <footer>
   <div class="container">
     <div class="footer-inner">
-
       <div class="footer-brand">
-        <div class="f-logo">Apart Hotel <em>Kunturi</em></div>
-        <div class="section-label" style="margin-top:6px;margin-bottom:0;">
-          <span></span>Arica, Chile
-        </div>
-        <p class="f-tagline">
-          Departamentos independientes en el norte de Chile. Tu hogar con la comodidad
-          de un hospedaje — el lugar perfecto para descubrir Arica a tu propio ritmo.
-        </p>
+        <div class="f-logo">Apart Hotel <em>Katari</em></div>
+        <div class="section-label" style="margin-top:6px;margin-bottom:0;"><span></span>Arica, Chile</div>
+        <p class="f-tagline">Departamentos independientes en el norte de Chile. Tu hogar con la comodidad de un hospedaje — el lugar perfecto para descubrir Arica a tu propio ritmo.</p>
         <div class="social-links" style="margin-top:1.2rem;">
           <a href="#" class="soc-btn" aria-label="Instagram">📷</a>
           <a href="#" class="soc-btn" aria-label="Facebook">📘</a>
-          <a href="https://wa.me/56993869645?text=Hola,%20quer%C3%ADa%20saber%20la%20disponibilidad%20de%20Katari" target="_blank" class="soc-btn" aria-label="WhatsApp">💬</a>
+          <a href="https://wa.me/56993869645" target="_blank" class="soc-btn" aria-label="WhatsApp">💬</a>
         </div>
       </div>
-
       <div class="footer-col">
         <h4>Apartamentos</h4>
         <ul>
-          <li><a href="#habitaciones">Estudio Kunturi</a></li>
-          <li><a href="#habitaciones">Departamento Doble</a></li>
-          <li><a href="#habitaciones">Familiar Amplio</a></li>
-          <li><a href="#contacto">Reservas</a></li>
+          <li><a href="#habitaciones">Departamento K1</a></li>
+          <li><a href="#habitaciones">Estudio K2</a></li>
+          <li><a href="#habitaciones">Accesible K3</a></li>
+          <li><a href="#habitaciones">Familiar K5</a></li>
+          <li><a href="#habitaciones">Separado K6</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h4>El hotel</h4>
         <ul>
@@ -754,24 +751,19 @@
           <li><a href="#testimonios">Testimonios</a></li>
         </ul>
       </div>
-
       <div class="footer-col">
         <h4>Contacto</h4>
         <ul>
           <li><a href="mailto:katari.hospedaje@gmail.com">katari.hospedaje@gmail.com</a></li>
           <li><a href="tel:+56993869645">+56 9 9386 9645</a></li>
           <li><a href="#ubicacion">Cómo llegar</a></li>
-          <li><a href="https://wa.me/56993869645?text=Hola,%20quer%C3%ADa%20saber%20la%20disponibilidad%20de%20Katari" target="_blank">WhatsApp</a></li>
+          <li><a href="https://wa.me/56993869645" target="_blank">WhatsApp</a></li>
         </ul>
       </div>
-
     </div>
-
     <div class="footer-bottom">
-      <p>© 2025 Apart Hotel Kunturi — Arica, Chile. Todos los derechos reservados.</p>
-      <div class="footer-px">
-        <span></span><span></span><span></span>
-      </div>
+      <p>© 2025 Apart Hotel Katari — Arica, Chile. Todos los derechos reservados.</p>
+      <div class="footer-px"><span></span><span></span><span></span></div>
       <p style="font-size:0.65rem;color:#444;">Diseñado con ♥ en el norte de Chile</p>
     </div>
   </div>
@@ -780,8 +772,15 @@
 <!-- Toast notification -->
 <div class="toast" id="toast">✓ ¡Solicitud enviada! Te contactamos pronto.</div>
 
-<!-- JavaScript principal -->
+<!-- Scripts -->
 <script src="assets/js/main.js"></script>
 
 </body>
 </html>
+
+
+
+
+
+
+
