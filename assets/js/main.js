@@ -95,15 +95,11 @@ const APTS = {
     feats: ['2 dormitorios', '1 cama Queen', '2 camas dobles', 'Cocina completa', 'Living / Comedor', '1 ba&ntilde;o', 'Hasta 4 personas'],
     slides: [
       { img: 'assets/img/k1/k1living.jpg',    caption: 'Living / Sala de estar' },
-       { img: null, icon: '🛏️',               caption: 'Dormitorio principal &mdash; cama Queen' },
-      { img: null, icon: '🛏️',               caption: 'Segundo dormitorio' },
-      { img: null, icon: '🍳',               caption: 'Cocina completamente equipada' },
-      { img: null, icon: '🚿',               caption: 'Ba&ntilde;o privado' },
-   /*   { img: 'assets/img/k1/k1living2.jpg',   caption: 'Living / Sala de estar' },
+      { img: 'assets/img/k1/k1living2.jpg',   caption: 'Living / Sala de estar' },
       { img: 'assets/img/k1/k1h1.jpg',        caption: 'Dormitorio principal &mdash; cama Queen' },
       { img: 'assets/img/k1/k1h2.jpg',        caption: 'Segundo dormitorio' },
       { img: 'assets/img/k1/k1cocina.jpg',    caption: 'Cocina completamente equipada' },
-      { img: 'assets/img/k1/k1baño.jpg',      caption: 'Ba&ntilde;o privado' },*/
+      { img: 'assets/img/k1/k1baño.jpg',      caption: 'Ba&ntilde;o privado' },
    
     ]
   },
