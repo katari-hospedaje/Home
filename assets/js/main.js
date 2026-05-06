@@ -114,10 +114,10 @@ const APTS = {
     feats: ['2 dormitorios', '1 cama Queen', '2 camas dobles', 'Cocina / Comedor integrado', '1 ba&ntilde;o', 'Hasta 4 personas', 'Opci&oacute;n m&aacute;s econ&oacute;mica'],
     slides: [
       { img: 'assets/img/k2/k2h2.jpg',        caption: 'Dormitorio principal' },
-     /*  { img: 'assets/img/k2/h1k2.jpg',        caption: 'Segundo dormitorio' },
+     { img: 'assets/img/k2/h1k2.jpg',        caption: 'Segundo dormitorio' },
       { img: 'assets/img/k2/k2cocina.jpg',    caption: 'Cocina y comedor integrados' },
       { img: 'assets/img/k2/k2cocina2.jpg',   caption: 'Cocina equipada' },
-      { img: 'assets/img/k2/k2baño.jpg',      caption: 'Ba&ntilde;o' },*/
+      { img: 'assets/img/k2/k2baño.jpg',      caption: 'Ba&ntilde;o' },
     ]
   },
 
