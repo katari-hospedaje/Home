@@ -95,13 +95,16 @@ const APTS = {
     feats: ['2 dormitorios', '1 cama Queen', '2 camas dobles', 'Cocina completa', 'Living / Comedor', '1 ba&ntilde;o', 'Hasta 4 personas'],
     slides: [
       { img: 'assets/img/k1/k1living.jpg',    caption: 'Living / Sala de estar' },
-      { img: 'assets/img/k1/k1living2.jpg',   caption: 'Living / Sala de estar' },
+       { img: null, icon: '🛏️',               caption: 'Dormitorio principal &mdash; cama Queen' },
+      { img: null, icon: '🛏️',               caption: 'Segundo dormitorio' },
+      { img: null, icon: '🍳',               caption: 'Cocina completamente equipada' },
+      { img: null, icon: '🚿',               caption: 'Ba&ntilde;o privado' },
+   /*   { img: 'assets/img/k1/k1living2.jpg',   caption: 'Living / Sala de estar' },
       { img: 'assets/img/k1/k1h1.jpg',        caption: 'Dormitorio principal &mdash; cama Queen' },
       { img: 'assets/img/k1/k1h2.jpg',        caption: 'Segundo dormitorio' },
       { img: 'assets/img/k1/k1cocina.jpg',    caption: 'Cocina completamente equipada' },
-      { img: 'assets/img/k1/k1baño.jpg',      caption: 'Ba&ntilde;o privado' },
-      /* Agregá más fotos así:
-         , */
+      { img: 'assets/img/k1/k1baño.jpg',      caption: 'Ba&ntilde;o privado' },*/
+   
     ]
   },
 
@@ -115,10 +118,10 @@ const APTS = {
     feats: ['2 dormitorios', '1 cama Queen', '2 camas dobles', 'Cocina / Comedor integrado', '1 ba&ntilde;o', 'Hasta 4 personas', 'Opci&oacute;n m&aacute;s econ&oacute;mica'],
     slides: [
       { img: 'assets/img/k2/k2h2.jpg',        caption: 'Dormitorio principal' },
-      { img: 'assets/img/k2/h1k2.jpg',        caption: 'Segundo dormitorio' },
+     /*  { img: 'assets/img/k2/h1k2.jpg',        caption: 'Segundo dormitorio' },
       { img: 'assets/img/k2/k2cocina.jpg',    caption: 'Cocina y comedor integrados' },
       { img: 'assets/img/k2/k2cocina2.jpg',   caption: 'Cocina equipada' },
-      { img: 'assets/img/k2/k2baño.jpg',      caption: 'Ba&ntilde;o' },
+      { img: 'assets/img/k2/k2baño.jpg',      caption: 'Ba&ntilde;o' },*/
     ]
   },
 
