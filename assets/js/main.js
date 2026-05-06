@@ -131,10 +131,12 @@ const APTS = {
     feats: ['2 dormitorios', '1 cama Queen', '2 camas dobles', 'Cocina completa', 'Living / Comedor', '2 ba&ntilde;os completos', 'Lavander&iacute;a exclusiva', 'Accesible &middot; Hasta 4 personas'],
     slides: [
       { img: 'assets/img/k3/k3comedor2.jpg',  caption: 'Comedor / Zona social' },
-      { img: null, icon: '🏠',               caption: 'Vista general del departamento' },
-      { img: null, icon: '🛏️',               caption: 'Dormitorio principal accesible' },
-      { img: 'assets/img/k2/k2baño.jpg',       caption: 'Ba&ntilde;o accesible' },
-      { img: null, icon: '🧺',               caption: 'Lavander&iacute;a de uso exclusivo' },
+      { img: 'assets/img/k3/k3comedor.jpg',   caption: 'Comedor / Zona social' },
+      { img: 'assets/img/k3/k3h1.jpg',        caption: 'Dormitorio principal accesible' },
+       { img: 'assets/img/k3/k3h2.jpg',       caption: 'Dormitorio secundario' },
+      { img: 'assets/img/k3/k3baño1.jpg',     caption: 'Ba&ntilde;o accesible' },
+      { img: 'assets/img/k3/k3baño2.jpg',     caption: 'Ba&ntilde;o 2' },
+      { img: 'assets/img/k3/k3lavadora.jpg',  caption: 'Lavander&iacute;a de uso exclusivo' },
     ]
   },
 
@@ -148,7 +150,8 @@ const APTS = {
     feats: ['2 dormitorios', '1 cama Queen', '3 camas dobles', 'Cocina completa', 'Living / Comedor amplio', '1 ba&ntilde;o', 'Hasta 5 personas', 'El m&aacute;s espacioso'],
     slides: [
       { img: 'assets/img/k5/k5comedor.jpg',   caption: 'Comedor &mdash; espacio para todos' },
-      { img: null, icon: '🛏️',               caption: 'Dormitorio con 3 camas dobles' },
+      { img: 'assets/img/k5/k5h1.jpg',        caption: 'Dormitorio principal' },
+      { img: 'assets/img/k5/k5h2.jpg',        caption: 'Dormitorio con 3 camas dobles' },
       { img: null, icon: '🛋️',               caption: 'Living amplio' },
       { img: null, icon: '🍳',               caption: 'Cocina equipada' },
     ]
@@ -165,8 +168,11 @@ const APTS = {
     slides: [
       { img: 'assets/img/k6/k6comedor.jpg',   caption: 'Comedor / Zona com&uacute;n' },
       { img: null, icon: '🛏️',               caption: 'Dormitorio con camas individuales' },
-      { img: null, icon: '🛏️',               caption: 'Segundo dormitorio independiente' },
-      { img: null, icon: '🍳',               caption: 'Cocina equipada' },
+      { img: 'assets/img/k6/k6h1.jpg',        caption: 'Segundo dormitorio independiente' },
+      { img: 'assets/img/k6/k6cocina.jpg',    caption: 'Cocina equipada' },
+      { img: 'assets/img/k6/k6baño.jpg',      caption: 'Ba&ntilde;o privado' },
+
+       
     ]
   }
 
