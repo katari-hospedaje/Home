@@ -180,7 +180,7 @@ a { text-decoration: none; color: inherit; }
   justify-content: space-between;
   padding: 14px 5%;
 }
-.nav-logo { display: flex; align-items: center; gap: 10px; }
+/* .nav-logo { display: flex; align-items: center; gap: 10px; }
 .logo-pixel { width: 28px; height: 28px; flex-shrink: 0; }
 .logo-pixel svg { width: 100%; height: 100%; }
 .logo-text .logo-main {
@@ -200,7 +200,49 @@ a { text-decoration: none; color: inherit; }
   text-transform: uppercase;
   color: var(--gray);
   margin-top: 2px;
+}*/
+/* ── Logo con imágenes ── */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
 }
+
+.nav-logo-icon {
+  height: 36px;        /* ajustá según tu imagen */
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+
+.nav-logo-img {
+  height: 28px;        /* ajustá según tu imagen */
+  width: auto;
+  display: block;
+}
+
+.nav-logo-sub {
+  font-family: var(--ff-body);
+  font-size: 0.52rem;
+  font-weight: 600;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--gray);
+  white-space: nowrap;
+  /* separa el subtítulo del logo con una línea vertical */
+  border-left: 1px solid #444;
+  padding-left: 10px;
+  margin-left: 2px;
+}
+
+/* En mobile, ocultá el logo-texto y mostrá solo el ícono */
+@media (max-width: 768px) {
+  .nav-logo-img  { display: none; }
+  .nav-logo-sub  { display: none; }
+  .nav-logo-icon { height: 32px; }
+}
+
 .nav-links {
   display: flex;
   align-items: center;
