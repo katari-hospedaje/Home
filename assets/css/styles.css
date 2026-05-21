@@ -516,6 +516,120 @@ a { text-decoration: none; color: inherit; }
   transform: translate(-2px, -2px);
   box-shadow: 3px 3px 0 var(--carbon);
 }
+/* ════════════════════════════════════════════════════════════
+   CERTIFICACIONES
+════════════════════════════════════════════════════════════ */
+.section-cert {
+  background: var(--carbon);
+  padding: 60px 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.cert-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.cert-header .section-label {
+  justify-content: center;
+}
+.cert-header .section-label::before { display: none; }
+
+.cert-intro {
+  font-size: 0.95rem;
+  color: var(--gray);
+  max-width: 560px;
+  margin: 0 auto;
+  line-height: 1.7;
+  text-align: center;
+}
+.cert-intro strong {
+  color: var(--cream);
+  font-weight: 600;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cert-card {
+  background: #2a2a2a;
+  border: 1px solid #383838;
+  padding: 28px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.cert-card:hover {
+  border-color: var(--gold);
+  transform: translate(-3px, -3px);
+  box-shadow: 5px 5px 0 rgba(214,150,20,0.2);
+}
+
+/* Card con acento dorado (energía solar) */
+.cert-card--highlight {
+  border-color: rgba(214,150,20,0.3);
+  background: rgba(214,150,20,0.05);
+}
+
+.cert-icon-wrap {
+  flex-shrink: 0;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid #444;
+}
+
+.cert-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
+  filter: brightness(0) invert(1);  /* hace el logo blanco sobre fondo oscuro */
+  opacity: 0.85;
+}
+.cert-logo:hover { opacity: 1; }
+
+.cert-logo-placeholder {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cert-title {
+  font-family: var(--ff-title);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 6px;
+}
+.cert-desc {
+  font-size: 0.78rem;
+  color: var(--gray);
+  line-height: 1.65;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cert-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .section-cert { padding: 50px 0; }
+}
+@media (max-width: 1024px) and (min-width: 769px) {
+  .cert-grid { grid-template-columns: 1fr 1fr; }
+}
+
 
 /* ════════════════════════════════════════════════════════════
    HABITACIONES
