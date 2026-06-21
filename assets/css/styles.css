@@ -885,6 +885,42 @@ a { text-decoration: none; color: inherit; }
 }
 .modal-close:hover { transform: scale(1.1); }
 
+/* ── Desglose de precios en el modal ── */
+
+.modal-price-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.modal-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.modal-price-tag {
+  font-family: var(--ff-body);
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gray);
+  background: #2a2a2a;
+  padding: 3px 8px;
+  border: 1px solid #3a3a3a;
+  white-space: nowrap;
+}
+.modal-price-tag--high {
+  color: var(--carbon);
+  background: var(--gold);
+  border-color: var(--gold);
+}
+.modal-season-note {
+  font-size: 0.68rem;
+  color: var(--gray);
+  font-style: italic;
+  margin-top: 8px;
+}
+
 /* ════════════════════════════════════════════════════════════
    SERVICIOS
 ════════════════════════════════════════════════════════════ */
