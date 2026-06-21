@@ -59,12 +59,44 @@ window.addEventListener('scroll', () => {
 /* ─── Formulario de reserva ─────────────────────────────────── */
 function handleSubmit(e) {
   e.preventDefault();
-  const toast = document.getElementById('toast');
-  toast.classList.add('show');
-  setTimeout(() => toast.classList.remove('show'), 3800);
-  e.target.reset();
-}
 
+  // Recolectar datos del formulario
+  const nombre   = document.getElementById('nombre').value;
+  const email    = document.getElementById('email').value;
+  const checkin  = document.getElementById('checkin').value;
+  const checkout = document.getElementById('checkout').value;
+  const personas = document.getElementById('personas').value;
+  const tipoSel  = document.getElementById('tipo');
+  const tipo     = tipoSel.options[tipoSel.selectedIndex].text;
+  const mensaje  = document.getElementById('mensaje').value;
+
+  // Armar el mensaje para WhatsApp
+  let texto = `¡Hola! Quiero solicitar una reserva en Katari 🏡%0A%0A`;
+  texto += `*Nombre:* ${nombre}%0A`;
+  texto += `*Email:* ${email}%0A`;
+  texto += `*Check-in:* ${checkin}%0A`;
+  texto += `*Check-out:* ${checkout}%0A`;
+  texto += `*Personas:* ${personas}%0A`;
+  texto += `*Apartamento:* ${tipo}%0A`;
+  if (mensaje.trim() !== '') {
+    texto += `*Mensaje:* ${mensaje}%0A`;
+  }
+
+  // Número de WhatsApp de Katari
+  const numeroWhatsapp = '56993869645';
+  const urlWhatsapp = `https://wa.me/${numeroWhatsapp}?text=${texto}`;
+
+  // Mostrar confirmación y redirigir
+  const toast = document.getElementById('toast');
+  toast.textContent = '✓ Redirigiendo a WhatsApp...';
+  toast.classList.add('show');
+
+  setTimeout(() => {
+    toast.classList.remove('show');
+    window.open(urlWhatsapp, '_blank');
+    e.target.reset();
+  }, 900);
+}
 /* ================================================================
    MODAL + CARRUSEL DE APARTAMENTOS
    ──────────────────────────────────────────────────────────────
