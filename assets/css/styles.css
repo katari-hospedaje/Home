@@ -756,6 +756,21 @@ a { text-decoration: none; color: inherit; }
 }
 .hab-card:hover .hab-card-hint { opacity: 1; }
 
+/* ── Precio con nota de temporada ── */
+.hab-price-wrap { display: flex; flex-direction: column; gap: 2px; }
+.hab-price-note {
+  font-size: 0.62rem;
+  color: var(--gray);
+  font-style: italic;
+}
+
+.hab-note {
+  margin-top: 1.5rem;
+  font-size: 0.72rem;
+  color: var(--gray);
+  font-style: italic;
+  text-align: center;
+}
 /* ════════════════════════════════════════════════════════════
    MODAL CARRUSEL
 ════════════════════════════════════════════════════════════ */
