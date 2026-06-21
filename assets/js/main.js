@@ -123,7 +123,7 @@ const APTS = {
     model: 'Modelo K1 &mdash; El cl&aacute;sico',
     desc:  'Acogedor y funcional, el K1 es el favorito de familias y grupos de amigos. Cuenta con living y comedor separados, lo que permite que todos tengan su propio espacio para relajarse y compartir. La cocina est&aacute; completamente equipada para que cocinés como en casa.',
     why:   'Eleg&iacute; el K1 si viaj&aacute;s en familia o con amigos y valor&aacute;s tener un living donde reunirse. La separaci&oacute;n entre el descanso y la zona social hace que la convivencia sea mucho m&aacute;s c&oacute;moda.',
-    price: { baja: 40.000, alta: 45.000, moneda: 'CLP' },
+    price: { baja: 40000, alta: 45000, moneda: 'CLP' },
     feats: ['2 dormitorios', '1 cama Queen', '2 camas dobles', 'Cocina completa', 'Living / Comedor', '1 ba&ntilde;o', 'Hasta 4 personas'],
     slides: [
       { img: 'assets/img/k1/k1living.jpg',    caption: 'Living / Sala de estar' },
@@ -142,7 +142,7 @@ const APTS = {
     model: 'Modelo K2 &mdash; La opci&oacute;n pr&aacute;ctica',
     desc:  'El K2 es el modelo m&aacute;s econ&oacute;mico de Katari. Tiene la misma capacidad que el K1 &mdash; dos dormitorios para hasta 4 personas &mdash; pero con distribuci&oacute;n m&aacute;s compacta: cocina y comedor integrados, sin living separado.',
     why:   'Eleg&iacute; el K2 si tu prioridad es el precio y no necesit&aacute;s espacio de living. Ideal para grupos que pasan poco tiempo en el departamento y quieren algo funcional y bien ubicado.',
-    price: { baja: 38.000, alta: 43.000, moneda: 'CLP' },
+    price: { baja: 38000, alta: 43000, moneda: 'CLP' },
     feats: ['2 dormitorios', '1 cama Queen', '2 camas dobles', 'Cocina / Comedor integrado', '1 ba&ntilde;o', 'Hasta 4 personas', 'Opci&oacute;n m&aacute;s econ&oacute;mica'],
     slides: [
       { img: 'assets/img/k2/k2h2.jpg',        caption: 'Dormitorio principal' },
@@ -159,7 +159,7 @@ const APTS = {
     model: 'Modelo K3 &mdash; Comodidad sin barreras',
     desc:  'El K3 es nuestro apartamento m&aacute;s equipado. Dise&ntilde;ado para personas con movilidad reducida, ofrece dos ba&ntilde;os completos, lavander&iacute;a de uso exclusivo y amplios espacios de circulaci&oacute;n. Tambi&eacute;n ideal para familias que quieren m&aacute;xima independencia.',
     why:   'Eleg&iacute; el K3 si necesit&aacute;s accesibilidad, dos ba&ntilde;os para no compartir, o si viaj&aacute;s con alguien con necesidades especiales de movilidad. La lavander&iacute;a exclusiva marca la diferencia en estad&iacute;as largas.',
-    price: { baja: 43.000, alta: 48.000, moneda: 'CLP' },
+    price: { baja: 43000, alta: 48000, moneda: 'CLP' },
     feats: ['2 dormitorios', '1 cama Queen', '2 camas dobles', 'Cocina completa', 'Living / Comedor', '2 ba&ntilde;os completos', 'Lavander&iacute;a exclusiva', 'Accesible &middot; Hasta 4 personas'],
     slides: [
       { img: 'assets/img/k3/k3comedor2.jpg',  caption: 'Comedor / Zona social' },
@@ -178,7 +178,7 @@ const APTS = {
     model: 'Modelo K5 &mdash; Para grupos grandes',
     desc:  'El K5 es el departamento m&aacute;s amplio de Katari. Pensado para grupos de hasta 5 personas, tiene tres camas dobles m&aacute;s una Queen. El living y comedor son espaciosos para que todos est&eacute;n c&oacute;modos.',
     why:   'Eleg&iacute; el K5 si son 5 personas o si quer&eacute;s el mayor espacio posible. La cama doble adicional hace la diferencia cuando el grupo es grande y todos necesitan su propio espacio para dormir.',
-    price: { baja: 45.000, alta: 50.000, moneda: 'CLP' },
+    price: { baja: 45000, alta: 50000, moneda: 'CLP' },
     feats: ['2 dormitorios', '1 cama Queen', '3 camas dobles', 'Cocina completa', 'Living / Comedor amplio', '1 ba&ntilde;o', 'Hasta 5 personas', 'El m&aacute;s espacioso'],
     slides: [
       { img: 'assets/img/k5/k5comedor.jpg',   caption: 'Comedor &mdash; espacio para todos' },
@@ -195,7 +195,7 @@ const APTS = {
     model: 'Modelo K6 &mdash; Privacidad al m&aacute;ximo',
     desc:  'El K6 est&aacute; dise&ntilde;ado para grupos que prefieren la privacidad individual. Con cuatro camas dobles en dos dormitorios, cada persona tiene su propio espacio sin compartir cama. Perfecto para viajes de amigos o compa&ntilde;eros de trabajo.',
     why:   'Eleg&iacute; el K6 si son 4 personas y cada uno quiere su propia cama. No hay cama Queen compartida &mdash; todos duermen solos. Ideal para grupos de amigos o colegas que valoran la privacidad.',
-    price: { baja: 40.000, alta: 45.000, moneda: 'CLP' },
+    price: { baja: 40000, alta: 45000, moneda: 'CLP' },
     feats: ['2 dormitorios', '4 camas dobles individuales', 'Cocina completa', 'Living / Comedor', '1 ba&ntilde;o', 'Hasta 4 personas', 'M&aacute;xima privacidad individual'],
     slides: [
       { img: 'assets/img/k6/k6comedor.jpg',   caption: 'Comedor / Zona com&uacute;n' },
