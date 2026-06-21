@@ -178,7 +178,7 @@ const APTS = {
     model: 'Modelo K5 &mdash; Para grupos grandes',
     desc:  'El K5 es el departamento m&aacute;s amplio de Katari. Pensado para grupos de hasta 5 personas, tiene tres camas dobles m&aacute;s una Queen. El living y comedor son espaciosos para que todos est&eacute;n c&oacute;modos.',
     why:   'Eleg&iacute; el K5 si son 5 personas o si quer&eacute;s el mayor espacio posible. La cama doble adicional hace la diferencia cuando el grupo es grande y todos necesitan su propio espacio para dormir.',
-    price: { baja: 45.000, alta: 50.000, moneda: 'CLP' },,
+    price: { baja: 45.000, alta: 50.000, moneda: 'CLP' },
     feats: ['2 dormitorios', '1 cama Queen', '3 camas dobles', 'Cocina completa', 'Living / Comedor amplio', '1 ba&ntilde;o', 'Hasta 5 personas', 'El m&aacute;s espacioso'],
     slides: [
       { img: 'assets/img/k5/k5comedor.jpg',   caption: 'Comedor &mdash; espacio para todos' },
