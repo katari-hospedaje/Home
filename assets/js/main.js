@@ -227,7 +227,20 @@ function openModal(id) {
 
 
 
-  document.getElementById('mPrice').innerHTML = apt.price;
+  document.getElementById('mPrice').innerHTML = `
+  <div class="modal-price-group">
+    <div class="modal-price-row">
+      <span class="modal-price-tag">T. Baja</span>
+      <span class="modal-price" style="font-size:1.4rem;">$${apt.price.baja} ${apt.price.moneda}<span style="font-size:.65rem;color:var(--gray);font-weight:400;"> / noche</span></span>
+    </div>
+    <div class="modal-price-row">
+      <span class="modal-price-tag modal-price-tag--high">T. Alta</span>
+      <span class="modal-price" style="font-size:1.4rem;">$${apt.price.alta} ${apt.price.moneda}<span style="font-size:.65rem;color:var(--gray);font-weight:400;"> / noche</span></span>
+    </div>
+  </div>
+  <p class="modal-season-note">Temporada alta: diciembre–marzo, Semana Santa, fiestas patrias.</p>
+`;
+   
   document.getElementById('mFeats').innerHTML =
     apt.feats.map(f => `<span class="modal-feat">${f}</span>`).join('');
 
