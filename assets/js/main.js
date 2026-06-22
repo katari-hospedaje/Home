@@ -238,7 +238,7 @@ function openModal(id) {
       <span class="modal-price" style="font-size:1.4rem;">$${apt.price.alta} ${apt.price.moneda}<span style="font-size:.65rem;color:var(--gray);font-weight:400;"> / noche</span></span>
     </div>
   </div>
-  <p class="modal-season-note">Temporada alta: diciembre–marzo, Semana Santa, fiestas patrias.</p>
+  <p class="modal-season-note">Temporada alta: enero, febrero, julio, diciembre, Semana Santa, Fiestas Patrias y feriados largos.</p>
 `;
    
   document.getElementById('mFeats').innerHTML =
