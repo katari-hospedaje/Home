@@ -193,10 +193,10 @@ const APTS = {
     tag:   'Departamento &middot; Modelo K6',
     title: 'Departamento Separado',
     model: 'Modelo K6 &mdash; Privacidad al m&aacute;ximo',
-    desc:  'El K6 est&aacute; dise&ntilde;ado para grupos que prefieren la privacidad individual. Con cuatro camas dobles en dos dormitorios, cada persona tiene su propio espacio sin compartir cama. Perfecto para viajes de amigos o compa&ntilde;eros de trabajo.',
+    desc:  'El K6 est&aacute; dise&ntilde;ado para grupos que prefieren la privacidad individual. Con cuatro camas individuales en dos dormitorios, cada persona tiene su propio espacio sin compartir cama. Perfecto para viajes de amigos o compa&ntilde;eros de trabajo.',
     why:   'Eleg&iacute; el K6 si son 4 personas y cada uno quiere su propia cama. No hay cama Queen compartida &mdash; todos duermen solos. Ideal para grupos de amigos o colegas que valoran la privacidad.',
     price: { baja: 40000, alta: 45000, moneda: 'CLP' },
-    feats: ['2 dormitorios', '4 camas dobles individuales', 'Cocina completa', 'Living / Comedor', '1 ba&ntilde;o', 'Hasta 4 personas', 'M&aacute;xima privacidad individual'],
+    feats: ['2 dormitorios', '4 camas  individuales', 'Cocina completa', 'Living / Comedor', '1 ba&ntilde;o', 'Hasta 4 personas', 'M&aacute;xima privacidad individual'],
     slides: [
       { img: 'assets/img/k6/k6comedor.jpg',   caption: 'Comedor / Zona com&uacute;n' },
       { img: null, icon: '🛏️',               caption: 'Dormitorio con camas individuales' },
